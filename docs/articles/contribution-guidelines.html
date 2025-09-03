@@ -19,15 +19,16 @@
   </header>
   <div class="wiki-container">
     <main>
-      <aside class="sidebar">
-        <h3>Table of Contents</h3>
-        <ul class="toc">
+      <nav class="sidebar" id="sidebar-nav">
+        <button id="sidebar-toggle" aria-label="Toggle navigation">☰ Table of Contents</button>
+        <ul class="toc" id="toc-list">
           <li><a href="#guidelines">Guidelines</a></li>
           <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#external-links">External Links</a></li>
           <li><a href="#see-also">See Also</a></li>
           <li><a href="#references">References</a></li>
         </ul>
-      </aside>
+      </nav>
       <section class="wiki-content">
         <h2 id="guidelines">Contribution Guidelines</h2>
         <p>Follow these steps to contribute to IT-Repo:</p>
@@ -40,6 +41,11 @@
             <li>Open a pull request for review.</li>
           </ol>
         </div>
+        <hr>
+        <h3 id="external-links">External Links</h3>
+        <ul>
+          <li><a href="https://github.com/atulk93/IT-Repo">IT-Repo GitHub</a></li>
+        </ul>
         <hr>
         <h3 id="see-also">See Also</h3>
         <ul>
@@ -58,5 +64,13 @@
     <p>&copy; 2025 IT-Repo. All rights reserved.</p>
   </footer>
   <script src="../scripts/main.js"></script>
+  <script>
+    // Collapsible sidebar navigation
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const tocList = document.getElementById('toc-list');
+    sidebarToggle.addEventListener('click', function() {
+      tocList.classList.toggle('collapsed');
+    });
+  </script>
 </body>
 </html>

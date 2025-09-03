@@ -19,16 +19,17 @@
   </header>
   <div class="wiki-container">
     <main>
-      <aside class="sidebar">
-        <h3>Table of Contents</h3>
-        <ul class="toc">
+      <nav class="sidebar" id="sidebar-nav">
+        <button id="sidebar-toggle" aria-label="Toggle navigation">☰ Table of Contents</button>
+        <ul class="toc" id="toc-list">
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#structure">Folder Structure</a></li>
           <li><a href="#contribute">How to Contribute</a></li>
+          <li><a href="#external-links">External Links</a></li>
           <li><a href="#see-also">See Also</a></li>
           <li><a href="#references">References</a></li>
         </ul>
-      </aside>
+      </nav>
       <section class="wiki-content">
         <h2 id="introduction">Getting Started</h2>
         <p>This article will help you get started with the IT-Repo project and understand its structure.</p>
@@ -41,17 +42,22 @@
             <li><strong>scripts/</strong>: JavaScript files for interactivity.</li>
             <li><strong>styles/</strong>: CSS stylesheets for the site.</li>
             <li><strong>templates/</strong>: HTML templates for consistent page layouts.</li>
+          <hr>
+          <h3 id="external-links">External Links</h3>
+          <ul>
+            <li><a href="https://github.com/atulk93/IT-Repo">IT-Repo GitHub</a></li>
           </ul>
-        </div>
-        <div id="contribute">
-          <h3>How to Contribute</h3>
-          <ol>
-            <li>Fork the repository.</li>
-            <li>Create a new branch for your changes.</li>
-            <li>Add or edit articles in the <code>docs/articles/</code> folder.</li>
-            <li>Submit a pull request for review.</li>
-          </ol>
-        </div>
+          <hr>
+          <h3 id="see-also">See Also</h3>
+          <ul>
+            <li><a href="repo-structure.html">Repository Structure</a></li>
+            <li><a href="contribution-guidelines.html">Contribution Guidelines</a></li>
+          </ul>
+          <hr>
+          <h3 id="references">References</h3>
+          <ul>
+            <li><a href="../README.md">Project README</a></li>
+          </ul>
         <hr>
         <h3 id="see-also">See Also</h3>
         <ul>
@@ -70,5 +76,13 @@
     <p>&copy; 2025 IT-Repo. All rights reserved.</p>
   </footer>
   <script src="../scripts/main.js"></script>
+  <script>
+    // Collapsible sidebar navigation
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const tocList = document.getElementById('toc-list');
+    sidebarToggle.addEventListener('click', function() {
+      tocList.classList.toggle('collapsed');
+    });
+  </script>
 </body>
 </html>
