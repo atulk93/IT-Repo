@@ -1,0 +1,68 @@
+# How to Add Status Labels (Warning, In Progress, Done, Info) with Icons
+
+You can visually indicate the status of articles or sections in your wiki using labels and icons. Follow these steps:
+
+## 1. Choose or Create Icons
+- Place your icon images (e.g., PNG, SVG) in the `docs/images/` folder.
+- Recommended icon names:
+  - `warning.png` or `warning.svg`
+  - `in-progress.png` or `in-progress.svg`
+  - `done.png` or `done.svg`
+  - `info.png` or `info.svg`
+
+## 2. Add Label HTML to Your Page
+Insert the following HTML snippet where you want the label to appear:
+
+```html
+<!-- Warning Label -->
+<span class="label warning"><img src="../images/warning.png" alt="Warning" class="label-icon"> Warning: This section needs attention.</span>
+
+<!-- In Progress Label -->
+<span class="label in-progress"><img src="../images/in-progress.png" alt="In Progress" class="label-icon"> In Progress</span>
+
+<!-- Done Label -->
+<span class="label done"><img src="../images/done.png" alt="Done" class="label-icon"> Done</span>
+
+<!-- Info Label -->
+<span class="label info"><img src="../images/info.png" alt="Info" class="label-icon"> Info: Additional details available.</span>
+```
+
+## 3. Add CSS for Labels
+Add these styles to your `docs/styles/main.css`:
+
+```css
+.label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.95em;
+}
+.label-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+}
+.label.warning { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+.label.in-progress { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+.label.done { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.label.info { background: #cce5ff; color: #004085; border: 1px solid #b8daff; }
+```
+
+## 4. Example Usage
+```html
+<p>
+  <span class="label warning"><img src="../images/warning.png" alt="Warning" class="label-icon"> Warning: This section needs attention.</span>
+  <span class="label in-progress"><img src="../images/in-progress.png" alt="In Progress" class="label-icon"> In Progress</span>
+  <span class="label done"><img src="../images/done.png" alt="Done" class="label-icon"> Done</span>
+  <span class="label info"><img src="../images/info.png" alt="Info" class="label-icon"> Info: Additional details available.</span>
+</p>
+```
+
+## 5. Tips
+- You can use free icons from sites like [Font Awesome](https://fontawesome.com/icons) or [Google Material Icons](https://fonts.google.com/icons).
+- SVG icons are recommended for best scalability and appearance.
+- Adjust the CSS as needed for your theme.

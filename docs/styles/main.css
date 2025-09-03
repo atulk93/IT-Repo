@@ -1,3 +1,23 @@
+/* Status Labels */
+.label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.95em;
+}
+.label-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+}
+.label.warning { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+.label.in-progress { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+.label.done { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.label.info { background: #cce5ff; color: #004085; border: 1px solid #b8daff; }
 body {
   font-family: Arial, sans-serif;
   background: #f8f9fa;
