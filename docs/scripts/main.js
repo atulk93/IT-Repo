@@ -36,12 +36,14 @@ function showSearchResults(results) {
 	resultsDiv.style.display = 'block';
 }
 
-const searchForm = document.getElementById('search-form');
-if (searchForm) {
-	searchForm.addEventListener('submit', function(e) {
-		e.preventDefault();
-		const query = document.getElementById('search-input').value.trim().toLowerCase();
-		if (!query) return;
+const searchInput = document.getElementById('search-input');
+if (searchInput) {
+	searchInput.addEventListener('input', function() {
+		const query = searchInput.value.trim().toLowerCase();
+		if (!query) {
+			document.getElementById('search-results').style.display = 'none';
+			return;
+		}
 		const results = articles.filter(a =>
 			a.title.toLowerCase().includes(query) ||
 			a.description.toLowerCase().includes(query) ||
