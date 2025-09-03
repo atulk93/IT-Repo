@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{PAGE_TITLE}}</title>
+  <title>Repository Structure</title>
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <h1>IT-Repo Wiki</h1>
     <nav>
       <a href="../index.html">Home</a>
-      <a href="../articles/getting-started.html">Getting Started</a>
+      <a href="getting-started.html">Getting Started</a>
       <a href="../articles/">All Articles</a>
       <a href="../images/">Images</a>
       <a href="../data/">Data</a>
@@ -22,24 +22,35 @@
       <aside class="sidebar">
         <h3>Table of Contents</h3>
         <ul class="toc">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#content">Content</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#folders">Folders</a></li>
           <li><a href="#see-also">See Also</a></li>
           <li><a href="#references">References</a></li>
         </ul>
       </aside>
       <section class="wiki-content">
-        <h2 id="introduction">{{PAGE_TITLE}}</h2>
-        <p>{{PAGE_DESCRIPTION}}</p>
-        <div id="content">
-          {{PAGE_CONTENT}}
+        <h2 id="overview">Repository Structure</h2>
+        <p>This page describes the folder and file organization of IT-Repo.</p>
+        <div id="folders">
+          <h3>Folders</h3>
+          <ul>
+            <li><strong>docs/</strong>: Wiki and documentation site.</li>
+            <li><strong>src/</strong>: Source code (if present).</li>
+            <li><strong>tests/</strong>: Test scripts (if present).</li>
+            <li><strong>LICENSE</strong>: License information.</li>
+            <li><strong>README.md</strong>: Project overview.</li>
+          </ul>
         </div>
         <hr>
         <h3 id="see-also">See Also</h3>
-        {{SEE_ALSO}}
+        <ul>
+          <li><a href="getting-started.html">Getting Started</a></li>
+        </ul>
         <hr>
         <h3 id="references">References</h3>
-        {{REFERENCES}}
+        <ul>
+          <li><a href="../README.md">Project README</a></li>
+        </ul>
       </section>
     </main>
   </div>

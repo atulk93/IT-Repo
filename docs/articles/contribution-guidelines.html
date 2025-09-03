@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{PAGE_TITLE}}</title>
+  <title>Contribution Guidelines</title>
   <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <h1>IT-Repo Wiki</h1>
     <nav>
       <a href="../index.html">Home</a>
-      <a href="../articles/getting-started.html">Getting Started</a>
+      <a href="getting-started.html">Getting Started</a>
       <a href="../articles/">All Articles</a>
       <a href="../images/">Images</a>
       <a href="../data/">Data</a>
@@ -22,24 +22,35 @@
       <aside class="sidebar">
         <h3>Table of Contents</h3>
         <ul class="toc">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#content">Content</a></li>
+          <li><a href="#guidelines">Guidelines</a></li>
+          <li><a href="#workflow">Workflow</a></li>
           <li><a href="#see-also">See Also</a></li>
           <li><a href="#references">References</a></li>
         </ul>
       </aside>
       <section class="wiki-content">
-        <h2 id="introduction">{{PAGE_TITLE}}</h2>
-        <p>{{PAGE_DESCRIPTION}}</p>
-        <div id="content">
-          {{PAGE_CONTENT}}
+        <h2 id="guidelines">Contribution Guidelines</h2>
+        <p>Follow these steps to contribute to IT-Repo:</p>
+        <div id="workflow">
+          <h3>Workflow</h3>
+          <ol>
+            <li>Fork the repository.</li>
+            <li>Create a feature branch.</li>
+            <li>Make your changes and commit.</li>
+            <li>Open a pull request for review.</li>
+          </ol>
         </div>
         <hr>
         <h3 id="see-also">See Also</h3>
-        {{SEE_ALSO}}
+        <ul>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="repo-structure.html">Repository Structure</a></li>
+        </ul>
         <hr>
         <h3 id="references">References</h3>
-        {{REFERENCES}}
+        <ul>
+          <li><a href="../LICENSE">Project License</a></li>
+        </ul>
       </section>
     </main>
   </div>

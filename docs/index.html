@@ -11,20 +11,32 @@
     <h1>IT-Repo Wiki</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="articles/">Articles</a>
-      <a href="images/">Images</a>
-      <a href="data/">Data</a>
+      <a href="articles/getting-started.html">Getting Started</a>
+      <a href="articles/">All Articles (folder)</a>
+      <a href="images/">Images (folder)</a>
+      <a href="data/">Data (folder)</a>
     </nav>
   </header>
   <main>
     <section>
-      <h2>Welcome to the IT-Repo Wiki</h2>
-      <p>This site contains documentation, articles, and assets for the IT-Repo project.</p>
-      <ul>
-        <li>Browse <a href="articles/">Articles</a> for detailed documentation.</li>
-        <li>View <a href="images/">Images</a> and diagrams.</li>
-        <li>Access <a href="data/">Data</a> files and resources.</li>
-      </ul>
+        <h2>Welcome to the IT-Repo Wiki</h2>
+        <p>This site contains documentation, articles, and assets for the IT-Repo project. Use the navigation above to explore resources.</p>
+        <ul>
+          <li><strong>Getting Started:</strong> <a href="articles/getting-started.html">Read the guide</a> to understand the repo structure and contribution process.</li>
+          <li><strong>Articles:</strong> Visit <a href="articles/">All Articles</a> for technical documentation and guides.</li>
+          <li><strong>Images:</strong> Browse <a href="images/">Images</a> for diagrams and visual assets.</li>
+          <li><strong>Data:</strong> Access <a href="data/">Data</a> for datasets and structured information.</li>
+        </ul>
+        <hr>
+        <h3>How to Add New Content</h3>
+        <ol>
+          <li>Copy <code>docs/templates/page-template.html</code> to <code>docs/articles/your-article.html</code>.</li>
+          <li>Edit the placeholders (<code>{{PAGE_TITLE}}</code>, <code>{{PAGE_DESCRIPTION}}</code>, <code>{{PAGE_CONTENT}}</code>) with your content.</li>
+          <li>Link your new page from this index or other articles.</li>
+        </ol>
+        <hr>
+        <h3>Security & Contribution</h3>
+        <p>Only trusted contributors should merge changes. Please follow the repository's guidelines and do not share sensitive information.</p>
     </section>
   </main>
   <footer>
